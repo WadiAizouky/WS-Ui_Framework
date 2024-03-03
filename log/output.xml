@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-03-03T20:44:17.653936" rpa="false" schemaversion="5">
+<suite id="s1" name="SearchGoogle" source="D:\Users\way\PycharmProjects\WS_Framework\Scr\Tests\ui\tests\SearchGoogle.robot">
+<test id="s1-t1" name="Precondition test" line="10">
+<kw name="Open Browser ${url_google} ${Browser}">
+<msg time="2024-03-03T20:44:18.145115" level="FAIL">No keyword with name 'Open Browser ${url_google} ${Browser}' found. Did you try using keyword 'Selenium2Library.Open Browser' and forgot to use enough whitespace between keyword and arguments?</msg>
+<status status="FAIL" start="2024-03-03T20:44:18.145115" elapsed="0.003275">No keyword with name 'Open Browser ${url_google} ${Browser}' found. Did you try using keyword 'Selenium2Library.Open Browser' and forgot to use enough whitespace between keyword and arguments?</status>
+</kw>
+<status status="FAIL" start="2024-03-03T20:44:18.141900" elapsed="0.006995">No keyword with name 'Open Browser ${url_google} ${Browser}' found. Did you try using keyword 'Selenium2Library.Open Browser' and forgot to use enough whitespace between keyword and arguments?</status>
+</test>
+<test id="s1-t2" name="Searche Element test" line="16">
+<kw name="Input text in the search barre [Arguments] ${elementText}" owner="HomPage" source_name="Input text in the search barre [Arguments] ${tex}">
+<kw name="Input text [Arguments] ${SearchInput} ${tex}" owner="commons" source_name="Input text [Arguments] ${objet} ${tex}">
+<kw name="Set Variable ${objet}">
+<msg time="2024-03-03T20:44:18.152564" level="FAIL">No keyword with name 'Set Variable ${objet}' found. Did you try using keyword 'BuiltIn.Set Variable' and forgot to use enough whitespace between keyword and arguments?</msg>
+<var>${val_locater}</var>
+<status status="FAIL" start="2024-03-03T20:44:18.152564" elapsed="0.000000">No keyword with name 'Set Variable ${objet}' found. Did you try using keyword 'BuiltIn.Set Variable' and forgot to use enough whitespace between keyword and arguments?</status>
+</kw>
+<kw name="Input Text" owner="Selenium2Library">
+<arg>${val_locater}</arg>
+<arg>${tex}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-03-03T20:44:18.153601" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-03-03T20:44:18.150991" elapsed="0.002610">No keyword with name 'Set Variable ${objet}' found. Did you try using keyword 'BuiltIn.Set Variable' and forgot to use enough whitespace between keyword and arguments?</status>
+</kw>
+<kw name="Click Button [Arguments] ${SearchButton}" owner="commons" source_name="Click Button [Arguments] ${objet}">
+<status status="NOT RUN" start="2024-03-03T20:44:18.153601" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-03-03T20:44:18.149964" elapsed="0.004677">No keyword with name 'Set Variable ${objet}' found. Did you try using keyword 'BuiltIn.Set Variable' and forgot to use enough whitespace between keyword and arguments?</status>
+</kw>
+<kw name="Search element in the page" owner="SearchPage">
+<status status="NOT RUN" start="2024-03-03T20:44:18.154641" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-03-03T20:44:18.148895" elapsed="0.005746">No keyword with name 'Set Variable ${objet}' found. Did you try using keyword 'BuiltIn.Set Variable' and forgot to use enough whitespace between keyword and arguments?</status>
+</test>
+<test id="s1-t3" name="PostCondition" line="24">
+<kw name="Close All Browsers" owner="Selenium2Library">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-03-03T20:44:18.155684" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-03-03T20:44:18.155684" elapsed="0.001142"/>
+</test>
+<status status="FAIL" start="2024-03-03T20:44:17.659332" elapsed="0.497494"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="2" skip="0" id="s1" name="SearchGoogle">SearchGoogle</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
