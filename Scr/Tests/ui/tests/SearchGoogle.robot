@@ -1,7 +1,8 @@
 *** Settings ***
-Resource    D:\\Users\\way\\PycharmProjects\\WS_Framework\\Scr\\Resources\\ui\\HomPage.robot
-Resource    D:\\Users\\way\\PycharmProjects\\WS_Framework\\Scr\\Resources\\ui\\SearchPage.robot
-Resource    D:\\Users\\way\\PycharmProjects\\WS_Framework\\Scr\\Resources\\Confi\\EnvVariable.robot
+Resource    D:\\Users\\way\\PycharmProjects\\WS-Ui_Framework\\Scr\\Resources\\ui\\HomPage.robot
+Resource    D:\\Users\\way\\PycharmProjects\\WS-Ui_Framework\\Scr\\Resources\\ui\\SearchPage.robot
+Resource    D:\\Users\\way\\PycharmProjects\\WS-Ui_Framework\\Scr\\Resources\\Confi\\EnvVariable.robot
+Library     Selenium2Library
 
 *** Variables ***
 ${elementText}=   RobotFramework
@@ -11,7 +12,7 @@ Precondition test
      [Documentation]
      #précodition
 
-     Open Browser ${url_google} ${Browser}
+     Open Browser   ${url_google}  ${Browser}
 
 Searche Element test
      [Documentation]
